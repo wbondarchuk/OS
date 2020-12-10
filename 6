@@ -94,7 +94,6 @@ int fillTable(Table *table, int filesize, char *buf)
         }
         else
         {
-            table[lineCount].offset = table[lineCount - 1].offset + table[lineCount - 1].length + 1;
             ++lineCount;
             table[lineCount].offset = table[lineCount - 1].offset + table[lineCount - 1].length + 1;
         }
