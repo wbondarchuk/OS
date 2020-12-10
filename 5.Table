@@ -67,7 +67,7 @@ int main()
         while (scanf("%d", &lineNumber))
         {
             if (lineNumber == 0) { break; }
-            if ( lineNumber < 0 || lineNumber >= lineCount) { printf("This line do$
+            if ( lineNumber < 0 || lineNumber >= lineCount) { printf("This line doenst exist \n"); }
             else { readLine(table, lineNumber, buffer); }
         }
 
