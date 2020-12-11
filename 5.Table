@@ -35,6 +35,7 @@ int main()
     lseek(file, 0, SEEK_SET);
 
     Table table[filesize];
+    memset(table, 0, filesize * sizeof(Table));
     char buffer[filesize];
     while(read(file, buffer, filesize) == -1)
     {
