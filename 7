@@ -36,8 +36,7 @@ int main()
     }
     lseek(file, 0, SEEK_SET);
     Table table[filesize];
-    memset(table, 0, filesize * sizeof(Table));
-        char* mapf;
+    char* mapf;
     if ((mapf = mmap(0,filesize,PROT_READ,MAP_SHARED,file,0)) == MAP_FAILED)
     {
         printf("Mmap error\n");
