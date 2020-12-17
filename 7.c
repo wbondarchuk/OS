@@ -67,7 +67,7 @@ int main()
             int lineNumber;
             scanf("%d", &lineNumber);
             if (lineNumber == 0) { break; }
-            if ( lineNumber < 0 || lineNumber >= lineCount) {  printf("This line doenst exist \n"); }
+            if ( lineNumber < 0 || lineNumber >= lineCount) {  printf("This line does not exist \n"); }
             else { readLine(table, lineNumber, mapf); }
         }
     }
